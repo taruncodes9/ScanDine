@@ -1,0 +1,122 @@
+/* Reset default styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Container styling */
+section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual item styling */
+.item {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+/* Sidenav styling */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: width 0.5s ease-in-out; /* Smooth transition for width */
+    padding-top: 60px;
+}
+
+/* Links in the sidenav */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    position: relative; /* Added */
+    transition: color 0.3s; /* Smooth transition for color */
+}
+
+/* Change link color on hover */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Close button styling */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    transition: color 0.3s; /* Smooth transition for color */
+}
+
+/* Close button hover color */
+.sidenav .closebtn:hover {
+    color: #e74c3c; /* Change color on hover */
+}
+
+/* Button to open the sidenav */
+.open-nav {
+    position: fixed;
+    top: 20px;
+    right: 60px;
+    z-index: 2;
+    transition: right 0.5s ease-in-out; /* Smooth transition for right position */
+}
+
+/* Style for the open cart button */
+.open-nav button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Button hover effect */
+.open-nav button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+/* Common close button styles */
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    transition: color 0.3s; /* Smooth transition for color */
+}
+
+/* General button styling */
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+}

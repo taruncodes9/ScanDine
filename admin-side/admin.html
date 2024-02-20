@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin-styles.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <section id="orders">
+        <h2>Orders</h2>
+        <ul id="order-list"></ul>
+        <p>Total Billing Amount: $<span id="total-billing">0.00</span></p>
+    </section>
+
+    <section id="send-amount">
+        <h2>Send Amount</h2>
+        <form id="sendAmountForm">
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount">
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <button onclick="printBill()">Print Bill</button>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>

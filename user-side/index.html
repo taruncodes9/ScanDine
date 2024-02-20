@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Restaurant Menu</title>
+</head>
+<body>
+    <section id="main-course">
+        <h2>Main Course</h2>
+        <div class="item">
+            <span>Spaghetti Bolognese - $15.99</span>
+            <button onclick="addToCart('Spaghetti Bolognese', 15.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Chicken Alfredo - $17.99</span>
+            <button onclick="addToCart('Chicken Alfredo', 17.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Grilled Salmon - $19.99</span>
+            <button onclick="addToCart('Grilled Salmon', 19.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Veggie Stir-Fry - $13.99</span>
+            <button onclick="addToCart('Veggie Stir-Fry', 13.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Beef Stroganoff - $18.99</span>
+            <button onclick="addToCart('Beef Stroganoff', 18.99)">Add to Cart</button>
+        </div>
+    </section>
+    
+    <section id="dessert">
+        <h2>Dessert</h2>
+        <div class="item">
+            <span>Chocolate Cake - $8.99</span>
+            <button onclick="addToCart('Chocolate Cake', 8.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Apple Pie - $7.99</span>
+            <button onclick="addToCart('Apple Pie', 7.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Strawberry Cheesecake - $9.99</span>
+            <button onclick="addToCart('Strawberry Cheesecake', 9.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Tiramisu - $10.99</span>
+            <button onclick="addToCart('Tiramisu', 10.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Ice Cream Sundae - $6.99</span>
+            <button onclick="addToCart('Ice Cream Sundae', 6.99)">Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="burgers">
+        <h2>Burgers</h2>
+        <!-- Existing burger items... -->
+
+        <!-- Add new items below: -->
+        <div class="item">
+            <span>Double Cheeseburger - $12.99</span>
+            <button onclick="addToCart('Double Cheeseburger', 12.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Spicy Chicken Burger - $11.99</span>
+            <button onclick="addToCart('Spicy Chicken Burger', 11.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Veggie Burger - $10.99</span>
+            <button onclick="addToCart('Veggie Burger', 10.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Fish Fillet Burger - $13.99</span>
+            <button onclick="addToCart('Fish Fillet Burger', 13.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>BBQ Ranch Burger - $14.99</span>
+            <button onclick="addToCart('BBQ Ranch Burger', 14.99)">Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="pizza">
+        <h2>Pizza</h2>
+        <!-- Existing pizza items... -->
+
+        <!-- Add new items below: -->
+        <div class="item">
+            <span>Hawaiian Pizza - $15.99</span>
+            <button onclick="addToCart('Hawaiian Pizza', 15.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Mexican Supreme Pizza - $17.99</span>
+            <button onclick="addToCart('Mexican Supreme Pizza', 17.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Vegetarian Deluxe Pizza - $16.99</span>
+            <button onclick="addToCart('Vegetarian Deluxe Pizza', 16.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Pepperoni and Mushroom Pizza - $14.99</span>
+            <button onclick="addToCart('Pepperoni and Mushroom Pizza', 14.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>BBQ Chicken Pizza - $18.99</span>
+            <button onclick="addToCart('BBQ Chicken Pizza', 18.99)">Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="south-indian">
+        <h2>South Indian</h2>
+        <div class="item">
+            <span>Idli with Sambar - $7.99</span>
+            <button onclick="addToCart('Idli with Sambar', 7.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Dosa with Coconut Chutney - $9.99</span>
+            <button onclick="addToCart('Dosa with Coconut Chutney', 9.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Uttapam with Tomato Chutney - $8.99</span>
+            <button onclick="addToCart('Uttapam with Tomato Chutney', 8.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Pongal - $6.99</span>
+            <button onclick="addToCart('Pongal', 6.99)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span>Masala Dosa - $10.99</span>
+            <button onclick="addToCart('Masala Dosa', 10.99)">Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <nav class="sidenav" id="sidenav">
+            <div class="sidenav" id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total">0.00</span></p>
+            <button onclick="checkout()">Checkout</button>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
+        </nav>
+        
+        <div class="open-nav">
+            <div class="open-nav">
+                <button onclick="openNav()">Open Cart</button>
+              </div>
+            <button onclick="toggleNav()">Open Cart</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
